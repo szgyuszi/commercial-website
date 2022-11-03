@@ -127,6 +127,7 @@
       <change afterPath="$PROJECT_DIR$/../../OOP/week5/hacker-news-java-szgyuszi/src/main/java/com/codecool/hackernews/entities/News.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../OOP/week5/hacker-news-java-szgyuszi/src/main/java/com/codecool/hackernews/util/FullResponseBuilder.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../OOP/week5/hacker-news-java-szgyuszi/src/main/java/com/codecool/hackernews/util/ParameterStringBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../React/codingchallenge1/src/components/ColorContainer.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../React/codingchallenge1/src/components/ColorInput.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../React/codingchallenge2/src/Item.js" afterDir="false" />
@@ -147,28 +148,6 @@
       <change afterPath="$PROJECT_DIR$/../../web/exercise/prób/.idea/prób.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../web/exercise/prób/lll/.idea/lll.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../web/week1/.idea/week1.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/setupTests.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +155,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -189,17 +168,23 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/cula/projects/PetProjects/commercial-website/commercial-app",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "GitIgnore"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -224,10 +209,22 @@
       <option name="presentableId" value="Default" />
       <updated>1667475839206</updated>
       <workItem from="1667475840783" duration="362000" />
+      <workItem from="1667477017438" duration="198000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

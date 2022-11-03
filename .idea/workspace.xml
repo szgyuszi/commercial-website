@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d7ce9403-0c77-4a13-ae8a-ed3d0c800e91" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/AnimalFarm/AnimalFarm/src/main/java/animals/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/AnimalFarm/AnimalFarm/src/main/java/animals/Cat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/AnimalFarm/AnimalFarm/src/main/java/animals/Cow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/AnimalFarm/AnimalFarm/src/main/java/animals/Dog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/AnimalFarm/AnimalFarm/src/main/java/animals/DogType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/AnimalFarm/AnimalFarm/src/main/java/animals/Geese.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/AnimalFarm/AnimalFarm/src/main/java/animals/Mammals.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Billiard/src/main/java/BilliardSaloon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Billiard/src/main/java/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Billiard/src/main/java/order/BeverageType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Billiard/src/main/java/order/Drink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Billiard/src/main/java/order/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Billiard/src/main/java/order/FoodType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Billiard/src/main/java/order/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Billiard/src/main/java/table/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Billiard/src/main/java/table/TableType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/ReadMe.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/src/data/message1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/src/data/message2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/src/main/java/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/src/main/java/store/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/src/main/java/store/products/Movie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/src/main/java/store/products/Music.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/src/main/java/store/products/Platform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/src/main/java/store/products/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/src/main/java/store/products/TVShow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/src/main/java/store/products/VideoGame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Blockbuster/src/main/resources/log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Casino/src/main/java/Casino.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Casino/src/main/java/dealer/Dealer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Casino/src/main/java/dealer/ExperienceLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Casino/src/main/java/games/BlackJack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Casino/src/main/java/games/Games.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Casino/src/main/java/games/Roulette.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Casino/src/main/java/games/SlotMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Concert/src/main/java/Organiser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Concert/src/main/java/bands/Band.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Concert/src/main/java/bands/Style.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Concert/src/main/java/concert/Concert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Concert/src/main/java/concert/Festival.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Concert/src/main/java/concert/Indoor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Concert/src/main/java/concert/Outdoor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Concert/src/main/java/drinks/BeerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Concert/src/main/java/util/RandomHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/IntelligenceCentre/src/main/java/IntelligenceCentre.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/IntelligenceCentre/src/main/java/agents/Agent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/IntelligenceCentre/src/main/java/agents/Informer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/IntelligenceCentre/src/main/java/agents/Officer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/IntelligenceCentre/src/main/java/agents/SecretAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/IntelligenceCentre/src/main/java/mission/Mission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/IntelligenceCentre/src/main/java/mission/MissionStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Network2/src/main/java/Network.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Network2/src/main/java/device/Device.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Network2/src/main/java/device/Light.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Network2/src/main/java/device/screen/having/device/Normal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Network2/src/main/java/device/screen/having/device/ScreenHavingDevice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Network2/src/main/java/device/screen/having/device/ScreenSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Network2/src/main/java/device/screen/having/device/Smart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/OnlineCasino/src/main/java/Casino.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/OnlineCasino/src/main/java/dealer/Dealer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/OnlineCasino/src/main/java/dealer/DealerExperience.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/OnlineCasino/src/main/java/games/BlackJack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/OnlineCasino/src/main/java/games/DealerNeededGames.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/OnlineCasino/src/main/java/games/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/OnlineCasino/src/main/java/games/Roulette.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/OnlineCasino/src/main/java/games/SlotMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Pa2/src/main/java/agency/Agency.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Pa2/src/main/java/agency/agencyitem/AgencyItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Pa2/src/main/java/agency/agencyitem/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Pa2/src/main/java/agency/agencyitem/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Pa2/src/main/java/agency/agencyitem/LocationType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Pa2/src/main/java/agency/agencyitem/Trip.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/PostOffice/src/main/java/PostOffice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/PostOffice/src/main/java/items/BoxTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/PostOffice/src/main/java/items/Boxes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/PostOffice/src/main/java/items/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/PostOffice/src/main/java/items/Letters.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Train2/src/main/java/TrainCompany.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Train2/src/main/java/train/CargoType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Train2/src/main/java/train/Freight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Train2/src/main/java/train/Train.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Train2/src/main/java/train/coachhaving/CoachHavingTrain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Train2/src/main/java/train/coachhaving/IC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Train2/src/main/java/train/coachhaving/Passenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Workers/src/main/java/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Workers/src/main/java/workers/DangerousProfession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Workers/src/main/java/workers/Electrician.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Workers/src/main/java/workers/ExperienceLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Workers/src/main/java/workers/GasFitter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Workers/src/main/java/workers/Plumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Workers/src/main/java/workers/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Workers2/src/main/java/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Workers2/src/main/java/worker/ExperienceLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Workers2/src/main/java/worker/Plumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Workers2/src/main/java/worker/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Workers2/src/main/java/worker/dangerousjob/DangerousJobWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Workers2/src/main/java/worker/dangerousjob/Electrician.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/PA pract/Workers2/src/main/java/worker/dangerousjob/GasFitter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/dojo/src/main/java/com/example/dojo/Restaurant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/dojo/src/main/java/com/example/dojo/items/Drink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/dojo/src/main/java/com/example/dojo/items/Ingredient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/dojo/src/main/java/com/example/dojo/items/OrderedItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/dojo/src/main/java/com/example/dojo/items/Sandwich.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/dojo/src/main/java/com/example/dojo/ui/Display.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/exercise/hello/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/week4/histogram-java-szgyuszi/src/test/resources/TextReaderTestCases/longerText.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/week5/Pa/src/main/java/Library.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/week5/Pa/src/main/java/libraryitem/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/week5/Pa/src/main/java/libraryitem/BookType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/week5/Pa/src/main/java/libraryitem/Cd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/week5/Pa/src/main/java/libraryitem/LibraryItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/week5/Pa/src/main/java/user/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/week5/Pa/src/main/java/user/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/week5/Pa/src/main/java/user/TownResident.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/week5/hacker-news-java-szgyuszi/src/main/java/com/codecool/hackernews/apis/TopNewsApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/week5/hacker-news-java-szgyuszi/src/main/java/com/codecool/hackernews/entities/News.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/week5/hacker-news-java-szgyuszi/src/main/java/com/codecool/hackernews/util/FullResponseBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OOP/week5/hacker-news-java-szgyuszi/src/main/java/com/codecool/hackernews/util/ParameterStringBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../React/codingchallenge1/src/components/ColorContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../React/codingchallenge1/src/components/ColorInput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../React/codingchallenge2/src/Item.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../React/codingchallenge2/src/ListItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Redux/reduxfullcourse/src/app/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Redux/reduxfullcourse/src/features/posts/AddPostForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Redux/reduxfullcourse/src/features/posts/PostAuthor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Redux/reduxfullcourse/src/features/posts/PostsList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Redux/reduxfullcourse/src/features/posts/ReactionButtons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Redux/reduxfullcourse/src/features/posts/TimeAgo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Redux/reduxfullcourse/src/features/posts/postsSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Redux/reduxfullcourse/src/features/users/usersSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../web/exercise/.idea/exercise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../web/exercise/css_exercise/.idea/css_exercise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../web/exercise/dom ex/.idea/dom ex.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../web/exercise/flaskProject/.idea/flaskProject.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../web/exercise/javascript_ex/ex1/.idea/ex1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../web/exercise/prób/.idea/prób.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../web/exercise/prób/lll/.idea/lll.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../web/week1/.idea/week1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/commercial-website-app/src/setupTests.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2H2Gbi1MVCygcmrgTGvecbqLBhe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="flattenPackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7ce9403-0c77-4a13-ae8a-ed3d0c800e91" name="Changes" comment="" />
+      <created>1667475839206</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667475839206</updated>
+      <workItem from="1667475840783" duration="362000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

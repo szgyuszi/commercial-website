@@ -3,10 +3,13 @@ import {Link} from "react-router-dom";
 
 import React, {useState} from 'react';
 
-function Header() {
+interface propType {
+    loggedIn: boolean
+}
+
+function Header({loggedIn}:propType) {
 
     const [isClosed, setIsClosed] = useState<boolean>(true);
-    const [loggedIn, setLoggedIn] = useState<boolean>(true);
     const [profileMenuOpen, setProfileMenuOpen] = useState<boolean>(false);
 
     const items = {
@@ -63,6 +66,7 @@ function Header() {
                             </Link>
                             {categoryMenuItems.map(item => {
                             return <Link
+                                key={item.name}
                                 to={item.href}
                                 className={loggedIn ?
                                     "flex flex-row justify-center items-center bg-teal-900 hover:bg-teal-800 rounded px-8 py-2 text-white text-xl mr-10 cursor-pointer" :
@@ -150,13 +154,13 @@ function Header() {
 
                 {/* profile section */}
                 {loggedIn && (
-                    <section className="w-[40%] flex justify-end">
-                            <div onClick={handleProfileClick} className="cursor-pointer lg:mr-8 mr-4 drop-shadow-lg select-none">
+                    <section data-testid="profile" className="w-[40%] flex justify-end">
+                            <div data-testid="profile-icon" onClick={handleProfileClick} className="cursor-pointer lg:mr-8 mr-4 drop-shadow-lg select-none">
                                 <img className="lg:w-14 lg:h-14 w-10 h-10 rounded-full border-solid border-2 border-white select-none "
                                      src={items.profile.img} alt={items.profile.name}/>
                             </div>
                         {profileMenuOpen && (
-                            <section className="absolute lg:top-20 top-14 right-0 px-2 py-2 bg-teal-200 sm:w-[48%] lg:w-[15%] z-1 drop-shadow flex flex-col items-center justify-center rounded-b">
+                            <section data-testid="profile-menu" className="absolute lg:top-20 top-14 right-0 px-2 py-2 bg-teal-200 sm:w-[48%] lg:w-[15%] z-1 drop-shadow flex flex-col items-center justify-center rounded-b">
                                 {profileMenuItems.map(item => {
                                     return <Link key={item.name}
                                                  to={item.href}

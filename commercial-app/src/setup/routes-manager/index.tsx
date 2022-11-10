@@ -4,9 +4,10 @@ import Header from "../../common/Header";
 import MainPage from "../../pages/main/components/MainPage";
 
 function RoutesManager() {
+    let loggedIn:boolean = true;
     return (
         <Routes>
-            <Route path="/" element={<Header />}>
+            <Route path="/" element={<Header loggedIn={loggedIn} />}>
                 <Route path="" index element={<MainPage />} />
             </Route>
         </Routes>

@@ -1,4 +1,4 @@
-import {Bars3Icon, XMarkIcon, MagnifyingGlassIcon, QuestionMarkCircleIcon, FireIcon, RocketLaunchIcon, UserIcon, Cog6ToothIcon, ArrowLeftOnRectangleIcon } from '@heroicons/react/24/outline'
+import {Bars3Icon, XMarkIcon, MagnifyingGlassIcon, QuestionMarkCircleIcon, FireIcon, RocketLaunchIcon, UserIcon, Cog6ToothIcon, ArrowLeftOnRectangleIcon, HomeIcon } from '@heroicons/react/24/outline'
 import {Link} from "react-router-dom";
 
 import React, {useState} from 'react';
@@ -50,9 +50,41 @@ function Header() {
     }
 
     return (<>
-            <nav className="h-14 flex justify-evenly items-center bg-teal-400">
+            <nav className="w-[100%] lg:h-20 h-14 flex justify-between items-center bg-teal-400">
 
-                {/* mobile menu */}
+                {/* full screen view  */}
+
+                <section className={loggedIn ? "flex w-[80%] min-[640px]:block hidden" : "flex w-[100%] min-[640px]:block hidden"}>
+
+
+                        <div className="flex flex-row justify-start items-center ml-8">
+                            <Link to={items.home.href}>
+                                <HomeIcon className="h-12 w-12 hover:bg-teal-800 hover:text-white rounded p-2 text-teal-900  text-xl mr-8 cursor-pointer" />
+                            </Link>
+                            {categoryMenuItems.map(item => {
+                            return <Link
+                                to={item.href}
+                                className={loggedIn ?
+                                    "flex flex-row justify-center items-center bg-teal-900 hover:bg-teal-800 rounded px-8 py-2 text-white text-xl mr-10 cursor-pointer" :
+                                    "max-[800px]:hidden flex flex-row justify-center items-center bg-teal-900 hover:bg-teal-800 rounded px-8 py-2 text-white text-xl mr-10 cursor-pointer"
+                            }
+                            >
+                                {item.icon}{item.name}
+                            </Link>})
+                            }
+                            {!loggedIn && (
+                                <div className="justify-self-end absolute right-0">
+                                    <Link to={items.signUp.href} className="bg-teal-900 hover:bg-teal-800 rounded px-8 py-3 text-white text-xl mr-8 cursor-pointer">{items.signUp.name}</Link>
+                                    <Link to={items.login.href} className="bg-white hover:bg-teal-100 rounded px-8 py-3 text-teal-900 text-xl mr-10 cursor-pointer">{items.login.name}</Link>
+                                </div>
+                                )}
+                        </div>
+
+                </section>
+
+                {/* end full screen view  */}
+
+                {/* mobile view */}
                 <div className="flex flex-row justify-between min-[640px]:hidden w-full items-center">
                     {isClosed ? (<Bars3Icon onClick={menuHandler}
                                             className="text-white w-10 h-10 ml-4 hover:text-gray-200 hover:cursor-pointer drop-shadow-md"/>) : (
@@ -113,33 +145,32 @@ function Header() {
                                 </div>
                             </section>
                         </div>)}
-
-
                 </div>
-                {/* end mobile menu */}
+                {/* end mobile view */}
 
                 {/* profile section */}
-                <section className="w-[100%] flex justify-end">
-                    {loggedIn && (
-                        <div onClick={handleProfileClick} className="cursor-pointer mr-4 drop-shadow-lg select-none">
-                            <img className="w-10 h-10 rounded-full border-solid border-2 border-white select-none "
-                                 src={items.profile.img} alt={items.profile.name}/>
-                        </div>
-                    )}
-
-                    {profileMenuOpen && (
-                        <section className="absolute top-14 right-0 px-2 py-2 bg-teal-200 w-[48%] z-1 drop-shadow flex flex-col items-center justify-center rounded-b">
-                            {profileMenuItems.map(item => {
-                                return <Link key={item.name}
-                                             to={item.href}
-                                             className="text-sm flex flex-row items-center my-1"
-                                             onClick={handleProfileClick}>{item.icon}{item.name}
-                                </Link>
-                            })}
-                        </section>
-                    )}
-                </section>
+                {loggedIn && (
+                    <section className="w-[40%] flex justify-end">
+                            <div onClick={handleProfileClick} className="cursor-pointer lg:mr-8 mr-4 drop-shadow-lg select-none">
+                                <img className="lg:w-14 lg:h-14 w-10 h-10 rounded-full border-solid border-2 border-white select-none "
+                                     src={items.profile.img} alt={items.profile.name}/>
+                            </div>
+                        {profileMenuOpen && (
+                            <section className="absolute lg:top-20 top-14 right-0 px-2 py-2 bg-teal-200 sm:w-[48%] lg:w-[15%] z-1 drop-shadow flex flex-col items-center justify-center rounded-b">
+                                {profileMenuItems.map(item => {
+                                    return <Link key={item.name}
+                                                 to={item.href}
+                                                 className="text-sm flex flex-row items-center my-1 hover:bg-teal-300 px-3 py-1 rounded drop-shadow-sm"
+                                                 onClick={handleProfileClick}>{item.icon}{item.name}
+                                    </Link>
+                                })}
+                            </section>
+                        )}
+                    </section>
+                )}
                 {/* end profile section */}
+
+
 
 
             </nav>

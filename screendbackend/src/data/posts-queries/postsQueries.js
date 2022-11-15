@@ -26,7 +26,18 @@ const  createPost = (request, response) => {
         if (error) {
             throw error
         }
-        response.status(201).send(`User added with ID: ${results.rows[0].id}`)
+        response.status(201).send(`Post added with ID: ${results.rows[0].id}`)
+    })
+}
+
+const deletePost = (request, response) => {
+    const id = parseInt(request.params.id);
+
+    pool.query('DELETE FROM POSTS WHERE id = $1', [id], (error, result) => {
+        if (error) {
+            throw error
+        }
+        response.status(200).send(`Post deleted with ID: ${id}`)
     })
 }
 

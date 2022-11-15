@@ -43,6 +43,6 @@ const deletePost = (request, response) => {
 
 
 module.exports = {
-    getPosts, getPostById, createPost
+    getPosts, getPostById, createPost, deletePost
 }
 

@@ -20,7 +20,9 @@ const getPostById = (request, response) => {
 }
 
 const  createPost = (request, response) => {
-    const {title, img, date, likes, userId, categoryId} = request.body
+    const {title, img, likes, userId, categoryId} = request.body
+    const date = new Date().toISOString().slice(0, 19).replace('T', ' ');
+    console.log(date)
 
     pool.query('INSERT INTO posts (title, img, date, likes, userId, categoryId) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *', [title, img, date, likes, userId, categoryId], (error, results) => {
         if (error) {

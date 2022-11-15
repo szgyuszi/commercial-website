@@ -19,8 +19,19 @@ const getPostById = (request, response) => {
     })
 }
 
+const  createPost = (request, response) => {
+    const {title, img, date, likes, userId, categoryId} = request.body
+
+    pool.query('INSERT INTO posts (title, img, date, likes, userId, categoryId) VALUES ($1, $2, $3, $4, $5, $6) RETURNING *', [title, img, date, likes, userId, categoryId], (error, results) => {
+        if (error) {
+            throw error
+        }
+        response.status(201).send(`User added with ID: ${results.rows[0].id}`)
+    })
+}
+
 
 module.exports = {
-    getPosts, getPostById
+    getPosts, getPostById, createPost
 }
 

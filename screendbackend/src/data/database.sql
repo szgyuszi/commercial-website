@@ -38,6 +38,7 @@ INSERT INTO categories VALUES (3, 'Ninja');
 
 INSERT INTO "users"
 (id, name, email, password, img) VALUES (1, 'Gyuszi', 'szgybenec@gamil.com', '1234', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1zcJ0i7HDB64UCj8ROPXIwW7FeDViAzmAHoq3Ix8FWIj0i_M2CrHNqnYgPKSsjfI7MAU&usqp=CAU');
+SELECT pg_catalog.setval('users_id_seq', 2, true);
 
 INSERT INTO posts
 (id, title, img, date, likes, userId, categoryId) VALUES (1, 'Junky Times', 'https://i.pinimg.com/236x/a5/cc/a2/a5cca250ab647f5a99b733d3b2444324.jpg', now(), 4, 1, 2);
@@ -67,3 +68,4 @@ INSERT INTO posts
 (id, title, img, date, likes, userId, categoryId) VALUES (13, 'Nani', 'https://i.pinimg.com/236x/73/61/2d/73612d2d9aecab0c158b80855eb0c790.jpg', now(), 54, 1, 3);
 INSERT INTO posts
 (id, title, img, date, likes, userId, categoryId) VALUES (14, 'Omaiva Mo', 'https://i.pinimg.com/236x/7b/73/21/7b732167760cc245ee45ed8ca6362ce9.jpg', now(), 77, 1, 3);
+SELECT pg_catalog.setval('posts_id_seq', 15, true);

@@ -1,6 +1,7 @@
 import {render, screen, fireEvent} from "@testing-library/react";
 import Header from "./Header";
 import { MemoryRouter } from 'react-router-dom';
+import {act} from "react-dom/test-utils";
 
 describe('Testing Header component', () => {
     let loggedIn:boolean = true
@@ -17,7 +18,10 @@ describe('Testing Header component', () => {
 /*    it("Testing if profileIcon clicked menu is shown", () => {
         render(componentUnderTest, wrapper)
         const profileIcon = screen.getByTestId("profile-icon");
-        fireEvent(profileIcon, new MouseEvent('click'));
+        act(()=> {
+            profileIcon.dispatchEvent(new MouseEvent('click'))
+        })
+        //fireEvent(profileIcon, new MouseEvent('click'));
         const profileMenu = screen.getByTestId("profile-menu");
         expect(profileMenu).toBeDefined();
     })*/

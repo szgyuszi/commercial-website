@@ -30,3 +30,6 @@ app.delete('/posts/:id', db.deletePost)
 app.get('/users/:id', db.getUserById)
 app.post('/users', db.createUser)
 app.delete('/users/:id',db.deleteUser)
+
+//category routes
+app.get("/categories", db.getCategories)

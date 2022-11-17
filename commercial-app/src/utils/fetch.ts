@@ -30,3 +30,8 @@ export const createPost = async (post: RecentlyCreatedPost) => {
   });
   return await res.json();
 };
+
+export const getCategories = async () => {
+  const res = await fetch("/categories");
+  return await res.json();
+};

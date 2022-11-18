@@ -1,11 +1,12 @@
 # Screend
 A pinterest / tumblr like web application for learning purposes.
+Still work in progress.
 
-![ScreendMainPage](/home/cula/Pictures/Screend.png?raw=true "Title")
+![ScreendMain](https://user-images.githubusercontent.com/93653125/202737563-38849e36-8f84-4abe-a026-d587a7b36ea8.png)
 
 # Technologies
   ## Backend 
-      Nodejs
+     Nodejs
      Express.js
   ## Frontend
      React

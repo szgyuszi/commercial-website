@@ -81,7 +81,7 @@ function Header({ loggedIn }: propType) {
 
   return (
     <>
-      <nav className="sticky z-10 top-0 w-[100%] lg:h-20 h-14 flex justify-between items-center bg-teal-600">
+      <nav className="sticky z-10 top-0 w-[100%] lg:h-20 h-14 flex justify-between items-center  bg-gradient-to-r from-green-400 to-teal-600 drop-shadow-lg">
         {/* full screen view  */}
 
         <section

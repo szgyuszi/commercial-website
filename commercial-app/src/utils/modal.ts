@@ -14,3 +14,9 @@ export interface RecentlyCreatedPost {
   postImg: string;
   userId: number;
 }
+
+export interface UserContextInterface {
+  id: number;
+  name: string;
+  userImg: string;
+}

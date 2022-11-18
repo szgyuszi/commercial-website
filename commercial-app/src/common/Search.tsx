@@ -15,9 +15,9 @@ const Search = () => {
   return (
     <div className="flex flex-row justify-start items-center bg-white px-4 py-1 rounded cursor-pointer ml-10 w-[70%] max-[1540px]:w-80 max-[800px]:hidden">
       <MagnifyingGlassIcon className="w-5 h-5 mr-4 text-teal-900" />
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="w-full">
         <input
-          className="outline-none text-xl py-1 pl-3 max-[1540px]:w-60 w-[100%] "
+          className="outline-none text-xl py-1 pl-3 max-[1540px]:w-60 w-full"
           type="text"
           value={searchPhrase}
           placeholder="Search..."

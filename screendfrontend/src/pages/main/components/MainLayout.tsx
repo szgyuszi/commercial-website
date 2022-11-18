@@ -3,9 +3,11 @@ import MainPage from "./MainPage";
 
 const MainLayout = () => {
   return (
-    <div className="flex flex-row justify-between items-start ">
+    <div className="flex flex-row justify-start items-start ">
       <Sidebar />
-      <MainPage />
+      <section className="flex flex-col w-full justify-center items-center">
+        <MainPage />
+      </section>
     </div>
   );
 };

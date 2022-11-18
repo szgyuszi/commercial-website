@@ -16,7 +16,7 @@ const LandingPage = () => {
       />
       <div className="absolute flex flex-col justify-center items-center top-0 right-0 left-0 bottom-0 bg-blackOverlay z-50">
         <div className="p-5">
-          <h1 className="text-center text-black text-8xl">Screend</h1>
+          <h1 className="text-center text-teal-800 text-8xl">Screend</h1>
         </div>
         <button
           type="button"
@@ -25,7 +25,7 @@ const LandingPage = () => {
         >
           Sign up
         </button>
-        <Link className="text-lg" to="/login">
+        <Link className="text-lg text-teal-600" to="/login">
           Already have an account? Login!
         </Link>
       </div>

@@ -12,7 +12,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { Link, Outlet } from "react-router-dom";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import Search from "./Search";
 
 interface propType {
@@ -81,7 +81,7 @@ function Header({ loggedIn }: propType) {
 
   return (
     <>
-      <nav className="sticky z-10 top-0 w-[100%] lg:h-20 h-14 flex justify-between items-center bg-teal-600">
+      <nav className="sticky z-10 top-0 w-[100%] lg:h-20 h-14 flex justify-between items-center  bg-gradient-to-r from-green-400 to-teal-600 drop-shadow-lg">
         {/* full screen view  */}
 
         <section
@@ -130,7 +130,7 @@ function Header({ loggedIn }: propType) {
                 onClick={menuHandler}
                 className="text-white w-10 h-10 ml-4  hover:text-gray-200 hover:cursor-pointer border-solid border-2 rounded border-white"
               />
-              <section className="absolute top-14 left-0 px-8 py-8 bg-teal-200 w-full z-1 drop-shadow">
+              <section className="absolute top-14 left-0 px-8 py-8 bg-emerald-50 w-full z-1 drop-shadow">
                 <div className="flex justify-items-start flex-col items-center ">
                   {!loggedIn ? (
                     <>
@@ -223,14 +223,14 @@ function Header({ loggedIn }: propType) {
             {profileMenuOpen && (
               <section
                 data-testid="profile-menu"
-                className="absolute lg:top-20 top-14 right-0 px-2 py-2 bg-teal-200 sm:w-[48%] lg:w-[15%] z-1 drop-shadow flex flex-col items-center justify-center rounded-b"
+                className="absolute lg:top-20 top-14 right-0 px-2 py-2 bg-emerald-50 sm:w-[48%] lg:w-[15%] z-1 drop-shadow flex flex-col items-center justify-center rounded-b"
               >
                 {profileMenuItems.map((item) => {
                   return (
                     <Link
                       key={item.name}
                       to={item.href}
-                      className="text-sm flex flex-row items-center my-1 hover:bg-teal-300 px-3 py-1 rounded drop-shadow-sm"
+                      className="text-md flex flex-row items-center my-1 hover:bg-emerald-100 px-3 py-1 rounded drop-shadow-sm"
                       onClick={handleProfileClick}
                     >
                       {item.icon}

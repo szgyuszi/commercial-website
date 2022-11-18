@@ -9,6 +9,7 @@ Still work in progress.
   - Backend 
      - Nodejs 
      - Express.js
+     - PostgreSQL
   - Frontend 
      - React 
      - Tailwind

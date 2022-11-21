@@ -1,4 +1,5 @@
 const {pool} = require('../../config/databaseConfig')
+const {rows} = require("pg/lib/defaults");
 
 const getUserById = (request, response) => {
     const id = parseInt(request.params.id)
@@ -33,8 +34,22 @@ const deleteUser = (request, response) => {
     })
 }
 
+const loginUser = (request, response) => {
+   const {username, password} = request.body;
+
+    pool.query('SELECT id, name, email FROM users WHERE name=$1 and password=$2', [username, password], (error, results) => {
+        if (error) {
+            response.status(404).send('Username or password incorrect')
+        } else {
+
+            response.status(200).send(results.rows)
+        }
+    })
+}
+
 module.exports = {
     getUserById,
     createUser,
     deleteUser,
+    loginUser,
 }

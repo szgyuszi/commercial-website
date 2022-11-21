@@ -1,21 +1,20 @@
-import {render, screen, fireEvent} from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import Header from "./Header";
-import { MemoryRouter } from 'react-router-dom';
-import {act} from "react-dom/test-utils";
+import { MemoryRouter } from "react-router-dom";
 
-describe('Testing Header component', () => {
-    let loggedIn:boolean = true
+describe("Testing Header component", () => {
+  let loggedIn: boolean = true;
 
-    const componentUnderTest = <Header loggedIn={loggedIn}/>
-    const wrapper = {wrapper: MemoryRouter}
+  const componentUnderTest = <Header />;
+  const wrapper = { wrapper: MemoryRouter };
 
-    it("Testing if profile section is visible when logged in", ()=> {
-        render(componentUnderTest, wrapper)
-        const profile = screen.getByTestId("profile")
-        expect(profile).toBeDefined()
-    })
+  it("Testing if profile section is visible when logged in", () => {
+    render(componentUnderTest, wrapper);
+    const profile = screen.getByTestId("profile");
+    expect(profile).toBeDefined();
+  });
 
-/*    it("Testing if profileIcon clicked menu is shown", () => {
+  /*    it("Testing if profileIcon clicked menu is shown", () => {
         render(componentUnderTest, wrapper)
         const profileIcon = screen.getByTestId("profile-icon");
         act(()=> {
@@ -26,19 +25,19 @@ describe('Testing Header component', () => {
         expect(profileMenu).toBeDefined();
     })*/
 
-    it('Testing if profile section is not-visible when logged out', () => {
-        let loggedIn:boolean = false
+  it("Testing if profile section is not-visible when logged out", () => {
+    let loggedIn: boolean = false;
 
-        const componentUnderTest = <Header loggedIn={loggedIn}/>
+    const componentUnderTest = <Header />;
 
-        render(componentUnderTest, wrapper)
-        const getProfile = () => {
-            try {
-                return screen.getByTestId("profile")
-            } catch (e) {
-                return undefined
-            }
-        }
-        expect(getProfile()).toBeUndefined()
-    });
+    render(componentUnderTest, wrapper);
+    const getProfile = () => {
+      try {
+        return screen.getByTestId("profile");
+      } catch (e) {
+        return undefined;
+      }
+    };
+    expect(getProfile()).toBeUndefined();
+  });
 });

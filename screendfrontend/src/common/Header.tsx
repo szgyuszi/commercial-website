@@ -12,28 +12,32 @@ import {
 } from "@heroicons/react/24/outline";
 import { Link, Outlet } from "react-router-dom";
 
-import { useState, useContext } from "react";
+import { useState } from "react";
 import Search from "./Search";
-import { UserContext } from "../setup/app-context-manager/application-context-manager";
+import { useAppSelector } from "../context-manager/hooks";
+import { UserContextInterface } from "../utils/modal";
 
-interface propType {
-  loggedIn: boolean;
-}
-
-function Header({ loggedIn }: propType) {
+function Header() {
   const [isClosed, setIsClosed] = useState<boolean>(true);
   const [profileMenuOpen, setProfileMenuOpen] = useState<boolean>(false);
 
-  const userContext = useContext(UserContext);
+  const user: UserContextInterface = useAppSelector((state) => state.user);
+  let loggedIn;
+
+  if (user.id == null) {
+    loggedIn = false;
+  } else {
+    loggedIn = true;
+  }
 
   const items = {
     home: { name: "Home", active: false, href: "/" },
     login: { name: "Log in", active: false, href: "/login" },
     signUp: { name: "Sign up", active: false, href: "/sign-up" },
     profile: {
-      name: userContext?.name,
-      href: `/user/${userContext?.id}`,
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnPsHyxR_Y76c6PdW01ru33Nu4uvoHKrGeGW-lab4SxBRIqaka6qyvrojRZxv85WJmgjY&usqp=CAU",
+      name: user.name ? user.name : "",
+      href: `/user/${user.id}`,
+      img: user.userImg ? user.userImg : "",
     },
   };
 

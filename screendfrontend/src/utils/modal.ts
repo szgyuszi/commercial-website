@@ -20,3 +20,8 @@ export interface UserContextInterface {
   name: string | null;
   userImg: string | null;
 }
+
+export interface userDetails {
+  email: string;
+  password: string;
+}

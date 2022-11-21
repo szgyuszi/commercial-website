@@ -28,7 +28,8 @@ app.delete('/posts/:id', db.deletePost)
 
 //user routes
 app.get('/users/:id', db.getUserById)
-app.post('/users', db.createUser)
+app.post('/users/new', db.createUser)
+app.post('/users', db.loginUser)
 app.delete('/users/:id',db.deleteUser)
 
 //category routes

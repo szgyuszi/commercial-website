@@ -4,11 +4,10 @@ import LandingPage from "../../pages/landing/LandingPage";
 import MainLayout from "../../pages/main/components/MainLayout";
 
 function RoutesManager() {
-  let loggedIn: boolean = true;
   return (
     <Routes>
       <Route path="/get-started" element={<LandingPage />} />
-      <Route path="/" element={<Header loggedIn={loggedIn} />}>
+      <Route path="/" element={<Header />}>
         <Route index element={<MainLayout />} />
         <Route path="/post/:id" element={<h1>PostById</h1>} />
         <Route path="/user/:id" element={<h1>UserById</h1>} />

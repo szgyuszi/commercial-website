@@ -34,14 +34,17 @@ const deleteUser = (request, response) => {
 }
 
 const loginUser = (request, response) => {
-   const {username, password} = request.body;
+   const {email, password} = request.body;
 
-    pool.query('SELECT id, name, email FROM users WHERE name=$1 and password=$2', [username, password], (error, results) => {
+    pool.query('SELECT id, name, img as "userImg" FROM users WHERE email=$1 and password=$2', [email, password], (error, results) => {
         if (error) {
-            response.status(404).send('Username or password incorrect')
+            response.status(501).send('Database Error')
         } else {
-
-            response.status(200).send(results.rows)
+            if (results.rows.length > 0) {
+                response.status(200).json(results.rows)
+            } else {
+                response.status(404).send('Email or password incorrect')
+            }
         }
     })
 }

@@ -1,5 +1,4 @@
 const {pool} = require('../../config/databaseConfig')
-const {rows} = require("pg/lib/defaults");
 
 const getUserById = (request, response) => {
     const id = parseInt(request.params.id)
@@ -26,7 +25,7 @@ const createUser = (request, response) => {
 const deleteUser = (request, response) => {
     const id = parseInt(request.params.id)
 
-    pool.query('DELETE FROM users WHERE id = $1', [id], (error, results) => {
+    pool.query('DELETE FROM users WHERE id = $1', [id], (error) => {
         if (error) {
             throw error
         }

@@ -1,15 +1,12 @@
-import { useState } from "react";
+import { Provider } from "react-redux";
 import RoutesManager from "./setup/routes-manager";
-import { UserContextInterface } from "./utils/modal";
-import { UserContext } from "./setup/app-context-manager/application-context-manager";
+import { store } from "./context-manager/store";
 
 function App() {
-  const [user, setUser] = useState<UserContextInterface | null>(null);
-
   return (
-    <UserContext.Provider value={user}>
+    <Provider store={store}>
       <RoutesManager />
-    </UserContext.Provider>
+    </Provider>
   );
 }
 

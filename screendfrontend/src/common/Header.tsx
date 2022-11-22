@@ -14,12 +14,14 @@ import { Link, Outlet } from "react-router-dom";
 
 import { useState } from "react";
 import Search from "./Search";
-import { useAppSelector } from "../context-manager/hooks";
+import { useAppDispatch, useAppSelector } from "../context-manager/hooks";
 import { UserContextInterface } from "../utils/modal";
+import { logUserOut } from "../context-manager/features/userSlice";
 
 function Header() {
   const [isClosed, setIsClosed] = useState<boolean>(true);
   const [profileMenuOpen, setProfileMenuOpen] = useState<boolean>(false);
+  const dispatch = useAppDispatch();
 
   const user: UserContextInterface = useAppSelector((state) => state.user);
   let loggedIn;
@@ -30,9 +32,13 @@ function Header() {
     loggedIn = true;
   }
 
+  const logOut = () => {
+    dispatch(logUserOut());
+  };
+
   const items = {
     home: { name: "Home", active: false, href: "/" },
-    login: { name: "Log in", active: false, href: "/login" },
+    login: { name: "Sign in", active: false, href: "/sign-in" },
     signUp: { name: "Sign up", active: false, href: "/sign-up" },
     profile: {
       name: user.name ? user.name : "",
@@ -60,7 +66,7 @@ function Header() {
   const profileMenuItems = [
     {
       name: "Your profile",
-      href: "/",
+      href: `/user/${user.id}`,
       icon: <UserIcon className="h-4 w-4 mr-2" />,
     },
     {
@@ -72,6 +78,7 @@ function Header() {
       name: "Sign out",
       href: "/",
       icon: <ArrowLeftOnRectangleIcon className="h-4 w-4 mr-2" />,
+      action: logOut,
     },
   ];
 
@@ -233,15 +240,17 @@ function Header() {
               >
                 {profileMenuItems.map((item) => {
                   return (
-                    <Link
-                      key={item.name}
-                      to={item.href}
-                      className="text-md flex flex-row items-center my-1 hover:bg-emerald-100 px-3 py-1 rounded drop-shadow-sm"
-                      onClick={handleProfileClick}
-                    >
-                      {item.icon}
-                      {item.name}
-                    </Link>
+                    <div onClick={handleProfileClick}>
+                      <Link
+                        key={item.name}
+                        to={item.href}
+                        className="text-md flex flex-row items-center my-1 hover:bg-emerald-100 px-3 py-1 rounded drop-shadow-sm"
+                        onClick={item.action}
+                      >
+                        {item.icon}
+                        {item.name}
+                      </Link>
+                    </div>
                   );
                 })}
               </section>

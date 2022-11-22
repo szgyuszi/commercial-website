@@ -63,3 +63,11 @@ export const registerUser = async (newUser: newUser) => {
   }
   return await res.json();
 };
+
+export const getPostsByUserId = async (id: number | string) => {
+  const res = await fetch(`/posts/user/${id}`);
+  if (res.status === 404) {
+    return { error: "Wrong user id!" };
+  }
+  return await res.json();
+};

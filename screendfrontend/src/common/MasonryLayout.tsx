@@ -1,5 +1,5 @@
 import Masonry from "react-masonry-css";
-import { Post } from "../../../utils/modal";
+import { Post } from "../utils/modal";
 import PostCard from "./PostCard";
 
 const breakpointColumnsObj = {

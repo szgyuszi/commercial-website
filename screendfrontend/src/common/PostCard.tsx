@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineHeart } from "react-icons/ai";
 
-import { Post } from "../../../utils/modal";
+import { Post } from "../utils/modal";
 
 interface PropsType {
   post: Post;
@@ -55,17 +55,19 @@ const PostCard = ({ post }: PropsType) => {
           </div>
         )}
       </div>
-      <Link
-        to={`/user/${post.userId}`}
-        className="flex gap-2 mt-2 items-center"
-      >
-        <img
-          className="w-9 h-9 bprder-solid border-1 border-black rounded-full object-cover drop-shadow"
-          src={post.userImg}
-          alt="user-profile"
-        />
-        <p className="font-semibold capitalize">{post.userName}</p>
-      </Link>
+      {post.userName && (
+        <Link
+          to={`/user/${post.userId}`}
+          className="flex gap-2 mt-2 items-center"
+        >
+          <img
+            className="w-9 h-9 bprder-solid border-1 border-black rounded-full object-cover drop-shadow"
+            src={post.userImg}
+            alt="user-profile"
+          />
+          <p className="font-semibold capitalize">{post.userName}</p>
+        </Link>
+      )}
     </div>
   );
 };

@@ -240,9 +240,8 @@ function Header() {
               >
                 {profileMenuItems.map((item) => {
                   return (
-                    <div onClick={handleProfileClick}>
+                    <div key={item.name} onClick={handleProfileClick}>
                       <Link
-                        key={item.name}
                         to={item.href}
                         className="text-md flex flex-row items-center my-1 hover:bg-emerald-100 px-3 py-1 rounded drop-shadow-sm"
                         onClick={item.action}

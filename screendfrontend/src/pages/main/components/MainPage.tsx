@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { getPosts } from "../../../utils/fetch";
 import { Post } from "../../../utils/modal";
-import LoadingSpinner from "./LoadingSpinner";
-import MasonryLayout from "./MasonryLayout";
+import LoadingSpinner from "../../../common/LoadingSpinner";
+import MasonryLayout from "../../../common/MasonryLayout";
 
 function MainPage() {
   const [posts, setposts] = useState<Post[]>([]);

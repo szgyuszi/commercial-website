@@ -12,13 +12,14 @@ const getUserById = (request, response) => {
 }
 
 const createUser = (request, response) => {
-    const {name, email, password, img} = request.body
-
-    pool.query('INSERT INTO users (name, email, password, img) VALUES ($1, $2, $3, $4) RETURNING *', [name, email, password, img], (error, results) => {
-        if (error) {
-            throw error
+    const {name, email, password} = request.body
+    const img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGpDio_UDawRsrR-GzrvXvuf7FIEoZ4FtYQGUq6_2Zjb-UGKJhpNOrUJyvGeCImPmfJL4&usqp=CAU"
+    pool.query('INSERT INTO users (name, email, password, img) VALUES ($1, $2, $3, $4) On CONFLICT(email) DO NOTHING returning id', [name, email, password, img], (error, results) => {
+        if(results.rows.length === 0) {
+            return response.status(401).json({error: "Email already used!"})
+        } else {
+            response.status(201).json(results.rows[0].id)
         }
-        response.status(201).send(`User added with ID: ${results.rows[0].id}`)
     })
 }
 

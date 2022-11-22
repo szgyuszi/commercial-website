@@ -12,7 +12,7 @@ CREATE TABLE "users"
 (
     id    SERIAL PRIMARY KEY,
     name  VARCHAR NOT NULL,
-    email VARCHAR NOT NULL,
+    email VARCHAR NOT NULL unique,
     password VARCHAR NOT NULL,
     img VARCHAR NOT NULL
 );
@@ -37,7 +37,7 @@ INSERT INTO categories VALUES (2, 'Abstract');
 INSERT INTO categories VALUES (3, 'Ninja');
 
 INSERT INTO "users"
-(id, name, email, password, img) VALUES (1, 'Gyuszi', 'szgybenec@gamil.com', '1234', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1zcJ0i7HDB64UCj8ROPXIwW7FeDViAzmAHoq3Ix8FWIj0i_M2CrHNqnYgPKSsjfI7MAU&usqp=CAU');
+(id, name, email, password, img) VALUES (1, 'Gyuszi', 'szgybence@gmail.com', '1234', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1zcJ0i7HDB64UCj8ROPXIwW7FeDViAzmAHoq3Ix8FWIj0i_M2CrHNqnYgPKSsjfI7MAU&usqp=CAU');
 SELECT pg_catalog.setval('users_id_seq', 2, true);
 
 INSERT INTO posts

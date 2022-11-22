@@ -16,14 +16,14 @@ import { useState } from "react";
 import Search from "./Search";
 import { useAppDispatch, useAppSelector } from "../context-manager/hooks";
 import { UserContextInterface } from "../utils/modal";
-import { logUserOut } from "../context-manager/features/userSlice";
+import { logUserOut, userState } from "../context-manager/features/userSlice";
 
 function Header() {
   const [isClosed, setIsClosed] = useState<boolean>(true);
   const [profileMenuOpen, setProfileMenuOpen] = useState<boolean>(false);
   const dispatch = useAppDispatch();
 
-  const user: UserContextInterface = useAppSelector((state) => state.user);
+  const user: UserContextInterface = useAppSelector(userState);
   let loggedIn;
 
   if (user.id == null) {

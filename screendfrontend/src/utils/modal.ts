@@ -25,3 +25,7 @@ export interface userDetails {
   email: string;
   password: string;
 }
+
+export interface newUser extends userDetails {
+  name: string;
+}

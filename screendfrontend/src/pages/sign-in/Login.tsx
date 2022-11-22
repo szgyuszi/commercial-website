@@ -42,7 +42,7 @@ const Login = () => {
   return (
     <main className="w-full h-screen flex justify-center items-center bg-gradient-to-r from-white to-teal-400">
       <div className="flex flex-col justify-start items-center bg-teal-700 p-6 rounded-md drop-shadow-lg">
-        <h1 className="text-6xl text-white mb-6 p-4">Login</h1>
+        <h1 className="text-6xl text-white mb-6 p-4">Sign in</h1>
         {error && (
           <p className="p-2 mb-2 bg-red-700 text-white text-xl rounded">
             Invalid email or password!
@@ -83,7 +83,7 @@ const Login = () => {
             className="w-full bg-white text-teal-900 text-3xl px-4 py-3 rounded mt-4 hover:bg-teal-900 hover:text-white  hover:drop-shadow-lg transition-all ease-in-out"
             type="submit"
           >
-            Login
+            Sign in!
           </button>
         </form>
       </div>

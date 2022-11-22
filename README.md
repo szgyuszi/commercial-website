@@ -16,5 +16,6 @@ Still work in progress.
      - PostgreSQL
   - Frontend 
      - React 
+     - Typescript
      - Redux
      - Tailwind

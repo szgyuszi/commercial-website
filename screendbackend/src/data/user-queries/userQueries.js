@@ -3,11 +3,11 @@ const {pool} = require('../../config/databaseConfig')
 const getUserById = (request, response) => {
     const id = parseInt(request.params.id)
 
-    pool.query('SELECT * FROM users WHERE id = $1', [id], (error, results) => {
+    pool.query('SELECT id, name, img as "userImg" FROM users WHERE id = $1', [id], (error, results) => {
         if (error) {
             throw error
         }
-        response.status(200).json(results.rows)
+        response.status(200).json(results.rows[0])
     })
 }
 

@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineHeart } from "react-icons/ai";
-
-import { Post } from "../utils/modal";
+import { Post, UserContextInterface } from "../utils/modal";
+import { useAppSelector } from "../context-manager/hooks";
+import { userState } from "../context-manager/features/userSlice";
 
 interface PropsType {
   post: Post;
@@ -10,7 +11,7 @@ interface PropsType {
 
 const PostCard = ({ post }: PropsType) => {
   const [postHovered, setPostHovered] = useState(false);
-
+  const currentUser: UserContextInterface = useAppSelector(userState);
   const navigate = useNavigate();
 
   const handleLike = (e: React.MouseEvent<HTMLElement>) => {
@@ -57,7 +58,11 @@ const PostCard = ({ post }: PropsType) => {
       </div>
       {post.userName && (
         <Link
-          to={`/user/${post.userId}`}
+          to={
+            currentUser.id === post.userId
+              ? "/my-profile"
+              : `/user/${post.userId}`
+          }
           className="flex gap-2 mt-2 items-center"
         >
           <img

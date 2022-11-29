@@ -5,8 +5,8 @@ export interface Post {
   postDate: string;
   postLikes: number;
   userId: number;
-  userName: string;
-  userImg: string;
+  userName?: string;
+  userImg?: string;
 }
 
 export interface RecentlyCreatedPost {

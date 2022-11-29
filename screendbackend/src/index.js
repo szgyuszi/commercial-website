@@ -25,6 +25,7 @@ app.get('/posts', db.getPosts)
 app.get('/posts/:id', db.getPostById)
 app.post('/posts', db.createPost)
 app.delete('/posts/:id', db.deletePost)
+app.get('/posts/user/:id', db.getPostsByUserId)
 
 //user routes
 app.get('/users/:id', db.getUserById)

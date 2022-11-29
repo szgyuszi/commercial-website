@@ -16,14 +16,14 @@ import { useState } from "react";
 import Search from "./Search";
 import { useAppDispatch, useAppSelector } from "../context-manager/hooks";
 import { UserContextInterface } from "../utils/modal";
-import { logUserOut } from "../context-manager/features/userSlice";
+import { logUserOut, userState } from "../context-manager/features/userSlice";
 
 function Header() {
   const [isClosed, setIsClosed] = useState<boolean>(true);
   const [profileMenuOpen, setProfileMenuOpen] = useState<boolean>(false);
   const dispatch = useAppDispatch();
 
-  const user: UserContextInterface = useAppSelector((state) => state.user);
+  const user: UserContextInterface = useAppSelector(userState);
   let loggedIn;
 
   if (user.id == null) {
@@ -41,9 +41,9 @@ function Header() {
     login: { name: "Sign in", active: false, href: "/sign-in" },
     signUp: { name: "Sign up", active: false, href: "/sign-up" },
     profile: {
-      name: user.name ? user.name : "",
-      href: `/user/${user.id}`,
-      img: user.userImg ? user.userImg : "",
+      name: user.name!,
+      href: "/my-profile",
+      img: user.userImg!,
     },
   };
 
@@ -66,7 +66,7 @@ function Header() {
   const profileMenuItems = [
     {
       name: "Your profile",
-      href: `/user/${user.id}`,
+      href: `/my-profile`,
       icon: <UserIcon className="h-4 w-4 mr-2" />,
     },
     {
@@ -240,9 +240,8 @@ function Header() {
               >
                 {profileMenuItems.map((item) => {
                   return (
-                    <div onClick={handleProfileClick}>
+                    <div key={item.name} onClick={handleProfileClick}>
                       <Link
-                        key={item.name}
                         to={item.href}
                         className="text-md flex flex-row items-center my-1 hover:bg-emerald-100 px-3 py-1 rounded drop-shadow-sm"
                         onClick={item.action}

@@ -35,7 +35,7 @@ const  createPost = (request, response) => {
 const deletePost = (request, response) => {
     const id = parseInt(request.params.id);
 
-    pool.query('DELETE FROM POSTS WHERE id = $1', [id], (error, result) => {
+    pool.query('DELETE FROM posts WHERE id = $1', [id], (error, result) => {
         if (error) {
             throw error
         }
@@ -43,8 +43,20 @@ const deletePost = (request, response) => {
     })
 }
 
+const getPostsByUserId = (request, response) => {
+    const id = parseInt(request.params.id);
+
+    pool.query('Select id as "postId", title as "postTitle", img as "postImg", date as "postDate", likes as "postLikes", userid as "userId", categoryid as "categoryId" from posts WHERE userid = $1', [id], (error, result) => {
+        if (result.length === 0) {
+            response.status(404).send("User id posts not found")
+        } else {
+            response.status(200).json(result.rows)
+        }
+    })
+}
+
 
 module.exports = {
-    getPosts, getPostById, createPost, deletePost
+    getPosts, getPostById, createPost, deletePost, getPostsByUserId
 }
 

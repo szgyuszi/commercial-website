@@ -71,3 +71,11 @@ export const getPostsByUserId = async (id: number | string) => {
   }
   return await res.json();
 };
+
+export const getPageProfileById = async (id: string | number) => {
+  const res = await fetch(`/users/${id}`);
+  if (res.status === 404) {
+    return { error: "User not found!" };
+  }
+  return await res.json();
+};

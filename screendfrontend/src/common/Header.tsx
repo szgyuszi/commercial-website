@@ -41,9 +41,9 @@ function Header() {
     login: { name: "Sign in", active: false, href: "/sign-in" },
     signUp: { name: "Sign up", active: false, href: "/sign-up" },
     profile: {
-      name: user.name ? user.name : "",
-      href: `/user/${user.id}`,
-      img: user.userImg ? user.userImg : "",
+      name: user.name!,
+      href: "/my-profile",
+      img: user.userImg!,
     },
   };
 
@@ -66,7 +66,7 @@ function Header() {
   const profileMenuItems = [
     {
       name: "Your profile",
-      href: `/user/${user.id}`,
+      href: `/my-profile`,
       icon: <UserIcon className="h-4 w-4 mr-2" />,
     },
     {

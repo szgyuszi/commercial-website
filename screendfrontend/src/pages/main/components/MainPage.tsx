@@ -21,11 +21,7 @@ function MainPage() {
   if (loading) {
     return <LoadingSpinner />;
   } else {
-    return (
-      <div>
-        <MasonryLayout posts={posts} />
-      </div>
-    );
+    return <MasonryLayout posts={posts} />;
   }
 }
 

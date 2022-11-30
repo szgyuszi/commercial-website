@@ -5,7 +5,7 @@ const MainLayout = () => {
   return (
     <div className="flex flex-row justify-start items-start ">
       <Sidebar />
-      <section className="flex flex-col w-full justify-center items-center">
+      <section className="w-full">
         <MainPage />
       </section>
     </div>

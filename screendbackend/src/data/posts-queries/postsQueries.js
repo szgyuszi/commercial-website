@@ -35,7 +35,7 @@ const  createPost = (request, response) => {
 const deletePost = (request, response) => {
     const id = parseInt(request.params.id);
 
-    pool.query('DELETE FROM posts WHERE id = $1', [id], (error, result) => {
+    pool.query('DELETE FROM posts WHERE id = $1', [id], (error) => {
         if (error) {
             throw error
         }

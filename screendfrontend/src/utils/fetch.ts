@@ -81,8 +81,6 @@ export const getPageProfileById = async (id: string | number) => {
 };
 
 export const getPostsByCategoryId = async (id: string) => {
-  console.log(id);
-
   const res = await fetch(`/posts/category/${id}`);
   if (res.status === 404) {
     return { error: "Category not found!" };

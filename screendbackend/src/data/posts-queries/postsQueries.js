@@ -11,11 +11,11 @@ const getPosts = (request, response) => {
 const getPostById = (request, response) => {
     const id = parseInt(request.params.id)
 
-    pool.query('SELECT * FROM posts WHERE id = $1', [id], (error, results) => {
+    pool.query('Select p.id as "postId", p.title as "postTitle", p.img as "postImg", p.date as "postDate", p.likes as "postLikes", p.categoryid as "categoryId", u.id as "userId", u.name as "userName", u.img as "userImg" from posts p JOIN users u on u.id = p.userid WHERE p.id = $1', [id], (error, result) => {
         if (error) {
             throw error
         }
-        response.status(200).json(results.rows)
+        response.status(200).json(result.rows[0])
     })
 }
 
@@ -35,7 +35,7 @@ const  createPost = (request, response) => {
 const deletePost = (request, response) => {
     const id = parseInt(request.params.id);
 
-    pool.query('DELETE FROM posts WHERE id = $1', [id], (error, result) => {
+    pool.query('DELETE FROM posts WHERE id = $1', [id], (error) => {
         if (error) {
             throw error
         }
@@ -55,8 +55,24 @@ const getPostsByUserId = (request, response) => {
     })
 }
 
+const getPostsByCategoryId = (request, response) => {
+    const id = parseInt(request.params.id);
+
+
+    pool.query('Select id as "postId", title as "postTitle", img as "postImg", date as "postDate", likes as "postLikes", userid as "userId", categoryid as "categoryId" from posts WHERE categoryid = $1', [id], (error, result) => {
+            if (error) {
+                response.status(404);
+            } else {
+
+                response.status(200).json(result.rows)
+            }
+
+
+
+    })
+}
 
 module.exports = {
-    getPosts, getPostById, createPost, deletePost, getPostsByUserId
+    getPosts, getPostById, createPost, deletePost, getPostsByUserId, getPostsByCategoryId
 }
 

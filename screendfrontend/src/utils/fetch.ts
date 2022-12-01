@@ -5,12 +5,12 @@ export const getPosts = async () => {
   return await res.json();
 };
 
-export const getPostById = async (postId: number) => {
+export const getPostById = async (postId: string) => {
   const res = await fetch(`/posts/${postId}`);
   return await res.json();
 };
 
-export const deletePostById = async (postId: number) => {
+export const deletePostById = async (postId: string) => {
   const res = await fetch(`/posts/${postId}`, {
     method: "DELETE",
     headers: {
@@ -76,6 +76,16 @@ export const getPageProfileById = async (id: string | number) => {
   const res = await fetch(`/users/${id}`);
   if (res.status === 404) {
     return { error: "User not found!" };
+  }
+  return await res.json();
+};
+
+export const getPostsByCategoryId = async (id: string) => {
+  console.log(id);
+
+  const res = await fetch(`/posts/category/${id}`);
+  if (res.status === 404) {
+    return { error: "Category not found!" };
   }
   return await res.json();
 };

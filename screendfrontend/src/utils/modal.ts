@@ -7,6 +7,7 @@ export interface Post {
   userId: number;
   userName?: string;
   userImg?: string;
+  categoryId?: string;
 }
 
 export interface RecentlyCreatedPost {

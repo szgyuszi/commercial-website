@@ -44,8 +44,8 @@ const PostItem = () => {
   return (
     <>
       <div
-        className="flex xl:flex-row flex-col mt-10 m-auto bg-white shadow-lg"
-        style={{ maxWidth: "1500px", borderRadius: "32px" }}
+        className="flex xl:flex-row flex-col mt-10 m-auto bg-white shadow-xl"
+        style={{ maxWidth: "1000px", borderRadius: "32px" }}
       >
         <div className="flex justify-center items-center md:items-start flex-initial">
           <img

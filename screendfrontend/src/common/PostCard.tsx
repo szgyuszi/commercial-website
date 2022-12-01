@@ -24,7 +24,7 @@ const PostCard = ({ post }: PropsType) => {
         onMouseEnter={() => setPostHovered(true)}
         onMouseLeave={() => setPostHovered(false)}
         onClick={() => navigate(`/post/${post.postId}`)}
-        className=" relative cursor-pointer w-auto hover:shadow-lg rounded-lg overflow-hidden transition-all duration-500 ease-in-out hover:scale-105"
+        className=" relative cursor-pointer w-auto shadow-lg rounded-lg overflow-hidden transition-all duration-500 ease-in-out hover:scale-105"
       >
         {post.postImg && (
           <img

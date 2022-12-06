@@ -52,7 +52,7 @@ const MyProfile = () => {
         ) : (
           <>
             <p className="text-5xl mb-3">Your posts</p>
-            <section className="flex flex-row">
+            <section className="w-full bg-gradient-to-r from-green-400 to-teal-600 rounded drop-shadow-lg mb-20 p-8">
               <MasonryLayout posts={posts} />
             </section>
           </>

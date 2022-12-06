@@ -44,9 +44,9 @@ const Profile = () => {
       ) : (
         <>
           <section className="w-full h-1/6 flex justify-center items-end bg-gradient-to-r from-green-400 to-teal-600 drop-shadow-lg">
-            <div className="relative top-24 border-4 border-white border-solid rounded-full p-2 bg-white">
+            <div className="relative h-40 w-40 top-24 border-4 border-white border-solid rounded-full p-2 bg-white">
               <img
-                className="rounded-full"
+                className="rounded-full h-full w-full bg-cover overflow-hidden "
                 src={user?.userImg!}
                 alt={user?.name!}
               />
@@ -60,7 +60,10 @@ const Profile = () => {
               {user?.name}'s posts{" "}
               <span className="ml-2 text-xl"> [{posts.length}]</span>
             </p>
-            <div className="flex flex-row">
+            <div
+              className="w-[80%]
+            "
+            >
               <MasonryLayout posts={posts} />
             </div>
           </section>

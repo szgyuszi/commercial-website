@@ -17,6 +17,7 @@ import Search from "./Search";
 import { useAppDispatch, useAppSelector } from "../context-manager/hooks";
 import { UserContextInterface } from "../utils/modal";
 import { logUserOut, userState } from "../context-manager/features/userSlice";
+import { filterBy } from "../context-manager/features/categorySlice";
 
 function Header() {
   const [isClosed, setIsClosed] = useState<boolean>(true);
@@ -105,7 +106,7 @@ function Header() {
           }
         >
           <div className="flex flex-row justify-start items-center ml-8">
-            <Link to={items.home.href}>
+            <Link onClick={() => dispatch(filterBy(0))} to={items.home.href}>
               <HomeIcon className="h-12 w-12 hover:bg-teal-800 hover:text-white rounded p-2 text-teal-900  text-xl mr-8 cursor-pointer" />
             </Link>
             <Search />

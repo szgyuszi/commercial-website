@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { filterBy } from "../context-manager/features/categorySlice";
+import { useAppDispatch } from "../context-manager/hooks";
 import { getCategories } from "../utils/fetch";
 
 interface category {
@@ -8,6 +10,8 @@ interface category {
 }
 
 const Sidebar = () => {
+  const dispatch = useAppDispatch();
+
   const secondaryItems = [
     { name: "About", href: "/" },
     { name: "Apps", href: "/" },
@@ -40,6 +44,7 @@ const Sidebar = () => {
             <div
               className="text-start w-full px-8 py-6 text-2xl hover:bg-slate-200 hover:cursor-pointer transition-all duration-300 ease-in-out"
               key={item.id}
+              onClick={() => dispatch(filterBy(item.id))}
             >
               {item.name}
             </div>

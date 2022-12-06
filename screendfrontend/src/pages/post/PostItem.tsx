@@ -56,7 +56,7 @@ const PostItem = () => {
         </div>
         <div className="w-full p-5 flex-1 xl:min-w-620">
           <div>
-            <h1 className="text-7xl font-bold break-words mt-3">
+            <h1 className="text-7xl ml-2 font-bold break-words mt-3">
               {post?.postTitle}{" "}
               <span className="text-3xl text-gray-500">
                 by {post?.userName}
@@ -67,7 +67,7 @@ const PostItem = () => {
             to={`/user/${post?.userId}`}
             className="flex gap-2 mt-5 items-center bg-white rounded-lg "
           >
-            <div className="w-14 h-14 rounded-full">
+            <div className="ml-2 w-14 h-14 rounded-full">
               <img
                 src={post?.userImg}
                 className="w-14 h-14 rounded-full"

@@ -10,8 +10,8 @@ import {
   ArrowLeftOnRectangleIcon,
   HomeIcon,
 } from "@heroicons/react/24/outline";
+import { AiOutlinePlus } from "react-icons/ai";
 import { Link, Outlet } from "react-router-dom";
-
 import { useState } from "react";
 import Search from "./Search";
 import { useAppDispatch, useAppSelector } from "../context-manager/hooks";
@@ -223,10 +223,17 @@ function Header() {
         {/* profile section */}
         {loggedIn && (
           <section data-testid="profile" className="w-[40%] flex justify-end">
+            <Link
+              to={"/add-new-post"}
+              className="flex items-center justify-center mr-4 hover:cursor-pointer hover:border-slate-200 lg:border-2 border-2 border-solid border-white rounded-md"
+            >
+              {" "}
+              <AiOutlinePlus className="lg:w-12 lg:h-11 w-8 h-8 text-white hover:text-slate-200" />
+            </Link>
             <div
               data-testid="profile-icon"
               onClick={handleProfileClick}
-              className="cursor-pointer lg:mr-8 mr-4 drop-shadow-lg select-none"
+              className="cursor-pointer lg:mr-8 mr-4 drop-shadow-lg select-none grid place-content-center"
             >
               <img
                 className="lg:w-14 lg:h-14 w-10 h-10 rounded-full border-solid border-2 border-white select-none "

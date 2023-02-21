@@ -3,7 +3,7 @@ A pinterest / tumblr like web application for learning purposes.
 Made in mobile first development. \
 Still work in progress.
 
-New upcoming feature: 
+### New upcoming feature: chatting 
 https://github.com/szgyuszi/chat-app
 
 ![ScreendGetStarted](https://user-images.githubusercontent.com/93653125/202743317-e70125fe-5efe-483e-b834-3510908e803a.png)
